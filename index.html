@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <form id="form">
+                    <input type="color" id="color-picker" value="#f55a5a">
+                    <select id="color-mode">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-dark</option>
+                        <option value="monochrome-light">Monochrome-light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-complement</option>
+                        <option value="triad">Triad</option>
+                    </select>
+                    <button type="submit" id="submit-btn">Get color scheme</button>
+                </form>
+            </header>
+            <main>
+                <div class="color-scheme" id="color-scheme">
+                    <!-- Initial display -->
+                    <div style="background-color: #F55A5A;"></div>
+                    <div style="background-color: #2B283A;"></div>
+                    <div style="background-color: #FBF3AB;"></div>
+                    <div style="background-color: #AAD1B6;"></div>
+                    <div style="background-color: #A626D3;"></div>
+                </div>
+                <div class="color-scheme-hex-num" id="color-scheme-hex-num">
+                    <p>#F55A5A</p>
+                    <p>#2B283A</p>
+                    <p>#FBF3AB</p>
+                    <p>#AAD1B6</p>
+                    <p>#A626D3</p>
+                </div>
+            </main>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
